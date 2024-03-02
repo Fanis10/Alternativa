@@ -49,7 +49,7 @@
                             <a class="header__phone" href="tel:8(924)8417800">8 (924) 841-78-00</a>
                             <a class="header__phone" href="tel:8(416)2217800">8 (416) 221-78-00</a>
                         </div>
-                        <button class="header__btn btn">
+                        <button class="header__btn btn" data-fancybox data-src="#popup-call">
                             <span>Обратный звонок</span>
                         </button>
                     </div>
@@ -72,7 +72,7 @@
 								<li>Сами сделаем, смонтируем и настроим: <strong>от 7 дней на Вашем объекте</strong></li>
 							</ul>
 							<div class="main-section__group">
-								<button class="main-section__btn btn btn-green">
+								<button class="main-section__btn btn btn-green" data-fancybox data-src="#order">
 									<span>Помочь с выбором</span>
 								</button>
 								<div class="main-section__info">Поможем выбрать тип и удачное место <br> под размещение рекламной вывески</div>
@@ -431,7 +431,7 @@
 						<div class="advantages__left">
 							<h2>Вот почему <span class="text_color">87% наших первых клиентов становятся постоянными</span></h2>
 							<div class="advantages__group">
-								<button class="advantages__btn btn btn-green">
+								<button class="advantages__btn btn btn-green" data-fancybox data-src="#order">
 									<span>консультация</span>
 								</button>
 								<div class="advantages__info">Закажите <span>бесплатную консультацию,</span> <br> это экономит до 40 минут времени</div>
@@ -495,7 +495,7 @@
 								</div>
 							</div>
 							<div class="advantages__group">
-								<button class="advantages__btn btn btn-green">
+								<button class="advantages__btn btn btn-green" data-fancybox data-src="#order">
 									<span>консультация</span>
 								</button>
 								<div class="advantages__info">Закажите <span>бесплатную консультацию,</span> <br> это экономит до 40 минут времени</div>
@@ -743,6 +743,58 @@
 			</section>
 		</div>
 
+		<div class="popups">
+			<div id="popup-call" class="popup">
+				<div class="form">
+					<div class="form-head">
+						Обратная связь
+					</div>
+					<form method="POST" action="" class="form_block">
+						<div class="form-field form-group">
+							<input type="text" name="name1" placeholder="Ваше имя" class="form-control" />
+						</div>
+						<div class="form-field form-group">
+							<input type="tel" name="phone" placeholder="Ваш телефон" class="form-control required  inp" />
+						</div>
+						<button type="submit" name="send" class="form-btn btn btn-green">
+							<span>Отправить данные</span>
+						</button>
+						<div class="agreement-check">
+							<input class="agreement" type="checkbox" checked="checked" name="Agreement">
+							<label class="agreement-label">Подтверждаю свои данные и даю своё согласие на их обработку</label>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+		<div class="popups">
+			<div id="order" class="popup">
+				<div class="form">
+					<div class="form-head">
+						Обратная связь
+					</div>
+					<form method="POST" action="" class="form_block">
+						<div class="form-field form-group">
+							<input type="text" name="name1" placeholder="Ваше имя" class="form-control" />
+						</div>
+						<div class="form-field form-group">
+							<input type="tel" name="phone" placeholder="Ваш телефон" class="form-control required  inp" />
+						</div>
+						<div class="form-field form-group">
+							<input type="text" name="name1" placeholder="Сколько вывесок нужно" class="form-control" />
+						</div>
+						<button type="submit" name="send" class="form-btn btn btn-green">
+							<span>Отправить данные</span>
+						</button>
+						<div class="agreement-check">
+							<input class="agreement" type="checkbox" checked="checked" name="Agreement">
+							<label class="agreement-label">Подтверждаю свои данные и даю своё согласие на их обработку</label>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+
 		<footer class="footer">
     <div class="footer-top">
         <div class="container-fluid">
@@ -791,7 +843,7 @@
                             <a class="footer-top__phone" href="tel:8(924)8417800">8 (924) 841-78-00</a>
                             <a class="footer-top__phone" href="tel:8(416)2217800">8 (416) 221-78-00</a>
                         </div>
-                        <button class="footer-top__btn btn">
+                        <button class="footer-top__btn btn" data-fancybox data-src="#popup-call">
                             <span>Обратный звонок</span>
                         </button>
                     </div>
